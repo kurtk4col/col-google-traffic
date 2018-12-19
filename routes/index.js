@@ -3,6 +3,7 @@ var express = require('express');
 var router = express.Router();
 
 const cloudinary = require('cloudinary').v2; // Make sure to use v2
+// Something to delete later.
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
