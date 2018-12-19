@@ -8,7 +8,10 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
+console.log(cloudinary.config());
+
 async function getPic() {
+  console.log("Begin getPic");
   const timestamp = await (new Date()).toISOString()
   const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
   const page = await browser.newPage();
@@ -24,11 +27,13 @@ async function getPic() {
   const uploadOptions = {};
   cloudinary.uploader.upload_stream(
     uploadOptions, 
-    (error, result) => { }
+    (error, result) => { console.log(result) }
   ).end(screenshotBuffer);
 }
 
+console.log("1st getPic");
 getPic();
+console.log("repeating interval getPic");
 var interval = setInterval(getPic, 1000 * 60 * 15);
 
 // function consoleTest() {
