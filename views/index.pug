@@ -7,7 +7,7 @@ block content
     ul(style="list-style: none")
       each image in images.resources
         li
-          h5(style="padding-bottom: 5px; margin-bottom: 0px;")
-            = moment(image.created_at).format('dddd, MMMM Do YYYY, h:mm:ss a')
+          h5(style="padding-bottom: 5px;")
+            = moment(image.created_at).tz('America/Denver').format('dddd, MMMM Do YYYY, h:mm:ss a')
           div
             img(src=image.url alt='test' width=600)

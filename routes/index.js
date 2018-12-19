@@ -3,7 +3,7 @@ const dotenv = require ('dotenv').config();
 const express = require('express');
 const router = express.Router();
 
-const moment = require('moment');
+const moment = require('moment-timezone');
 
 const cloudinary = require('cloudinary').v2; // Make sure to use v2
 // Something to delete later.
