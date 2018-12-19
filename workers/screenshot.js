@@ -33,8 +33,8 @@ async function getPic() {
 
 console.log("1st getPic");
 getPic();
-console.log("repeating interval getPic");
-var interval = setInterval(getPic, 1000 * 60 * 15);
+// console.log("repeating interval getPic");
+// var interval = setInterval(getPic, 1000 * 60 * 15);
 
 // function consoleTest() {
 //   console.log("Test");
