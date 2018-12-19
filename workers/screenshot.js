@@ -10,7 +10,7 @@ cloudinary.config({
 
 async function getPic() {
   const timestamp = await (new Date()).toISOString()
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
   const page = await browser.newPage();
   await page.goto('https://www.google.com/maps/@39.9719159,-105.1399829,14z/data=!5m1!1e1');
   //await page.goto('https://www.google.com/maps/dir/749+Main+St,+Louisville,+CO+80027,+USA/3337+East+138th+Avenue,+Thornton,+CO+80602-8793,+USA/@39.9637158,-105.1050102,12z/am=t/data=!4m14!4m13!1m5!1m1!1s0x876bf35c31d85929:0x71500249c45ebd3f!2m2!1d-105.1325197!2d39.9775414!1m5!1m1!1s0x876c7487ad12c7b5:0x6bdc68920f29d212!2m2!1d-104.9483083!2d39.9469673!3e0!5m1!1e1');
