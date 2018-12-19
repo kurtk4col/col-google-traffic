@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Louisville Google Maps Traffic Snapshots
+  
+  ul(style="list-style: none")
+    each image in images.resources
+      li
+        div
+          = new Date(image.created_at).toLocaleString()
+        div
+          img(src=image.url alt='test' width=600)
