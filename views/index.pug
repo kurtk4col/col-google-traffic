@@ -8,5 +8,6 @@ block content
       li
         div
           = new Date(image.created_at).toString()
+          = new Date(image.created_at).toLocaleString("en-US", {timeZone: "America/Denver"})
         div
           img(src=image.url alt='test' width=600)
