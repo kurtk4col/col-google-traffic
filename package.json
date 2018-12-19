@@ -1,0 +1,21 @@
+{
+  "name": "col-google-traffic",
+  "version": "1.0.0",
+  "description": "Determine Traffic Congestion From Google Maps Traffic",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurtk4col/col-google-traffic.git"
+  },
+  "author": "Kurt Kowar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurtk4col/col-google-traffic/issues"
+  },
+  "homepage": "https://github.com/kurtk4col/col-google-traffic#readme"
+}
