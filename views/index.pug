@@ -7,6 +7,6 @@ block content
     each image in images.resources
       li
         div
-          = new Date(image.created_at).toLocaleString()
+          = new Date(image.created_at).toString()
         div
           img(src=image.url alt='test' width=600)
