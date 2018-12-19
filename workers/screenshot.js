@@ -24,7 +24,7 @@ async function getPic() {
   const uploadOptions = {};
   cloudinary.uploader.upload_stream(
     uploadOptions, 
-    (error, result) => { console.log(result) }
+    (error, result) => { }
   ).end(screenshotBuffer);
 }
 

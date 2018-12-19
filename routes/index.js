@@ -10,14 +10,12 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
-console.log(cloudinary.config())
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   console.log("index.js");
   cloudinary.api.resources(function(error, result) {
     console.log("inside cloudinary");
-    console.log(result);
+    //console.log(result);
     res.render('index', { title: 'Express', images: result });
   });
   
